@@ -17,5 +17,4 @@ public interface ChapterMapper {
     Chapter toEntity(ChapterDto chapterDto);
 
     List<ChapterDto> toDtoList(List<Chapter> chapters);
-
 }
