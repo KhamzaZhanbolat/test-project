@@ -15,4 +15,6 @@ public interface ChapterMapper {
 
     @Mapping(target = "course", ignore = true)
     Chapter toEntity(ChapterDto chapterDto);
+
+    List<ChapterDto> toDtoList(List<Chapter> chapters);
 }
