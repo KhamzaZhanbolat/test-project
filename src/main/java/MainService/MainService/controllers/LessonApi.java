@@ -26,7 +26,7 @@ public class LessonApi {
     }
 
     @GetMapping
-    @PreAuthorize("hasAnyRole('ADMIN', 'STUDENT')")
+    // @PreAuthorize("hasAnyRole('ADMIN', 'STUDENT')")
     public ResponseEntity<List<LessonDto>> getAllLessons() {
         log.info("Get all lessons");
         return ResponseEntity.ok(lessonService.getAll());
